@@ -41,7 +41,7 @@ FOREIGN KEY(Usn,Ssid) REFERENCES Class(Usn,Ssid)
 );
 
 
-1.	List all the student details studying in fourth semester ‘C’ section.
+1.	List all the student details studying in fourth semester â€˜Câ€™ section.
 SELECT s.usn,s.sname,s.address,s.phone
 FROM Student s, Semsec n, Class c
 WHERE n.sem=4 and n.sec='C' and s.usn=c.usn and c.ssid=n.ssid;
@@ -57,7 +57,7 @@ WHERE s.usn=c.usn AND m.ssid=c.ssid GROUP BY c.ssid, sem, sec;
 
 
 
-3.	Create a view of Test1 marks of student USN ‘1BI15CS101’ in all subjects.
+3.	Create a view of Test1 marks of student USN â€˜1BI15CS101â€™ in all subjects.
 CREATE VIEW Test1_Marks AS
 SELECT test1 FROM IAmarks WHERE usn='3br15cs005';
 
@@ -74,8 +74,8 @@ SELECT * FROM IAmarks;
 
 
 5.	Categorize students based on the following criterion:
-If FinalIA = 17 to 20 then CAT = ‘Outstanding’ If FinalIA = 12 to 16 then CAT = ‘Average’
-If FinalIA< 12 then CAT = ‘Weak’
+If FinalIA = 17 to 20 then CAT = â€˜Outstandingâ€™ If FinalIA = 12 to 16 then CAT = â€˜Averageâ€™
+If FinalIA< 12 then CAT = â€˜Weakâ€™
 Give these details only for 8th semester A, B, and C section students.
 
 SELECT i.usn,i.test1,i.test2,i.test3,i.finalia,
