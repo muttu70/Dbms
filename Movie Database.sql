@@ -31,10 +31,10 @@ rev_stars	NUMBER(10)	NOT NULL,
 PRIMARY KEY (mov_id11,rev_stars)
 );
 
-1.List the titles of all movies directed by ‘Hitchcock’.
+1.List the titles of all movies directed by â€˜Hitchcockâ€™.
 SELECT mov_title
 FROM Movie m,director d
-WHERE d.dir_id=m.dir_id and d.dir_name='Hitchcock’;
+WHERE d.dir_id=m.dir_id and d.dir_name='Hitchcockâ€™;
 
 2.Find the movie names where one or more actors acted in two or more movies. 
 SELECT MOV_TITLE
@@ -62,7 +62,7 @@ HAVING MAX(rev_stars)>0
 ORDER BY mov_title;
 
 
-5.Update rating of all movies directed by ‘Steven Spielberg’ to 5.
+5.Update rating of all movies directed by â€˜Steven Spielbergâ€™ to 5.
 UPDATE rating SET rev_stars=5
 WHERE mov_ID in (SELECT m.mov_ID
 FROM Movie m, rating r
