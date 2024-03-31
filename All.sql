@@ -49,6 +49,9 @@ SELECT * FROM SALESMAN;
 
 
 
+
+
+
 1.	List all the student details studying in fourth semester ‘C’ section.
 SELECT s.usn,s.sname,s.address,s.phone
 FROM Student s, Semsec n, Class c
@@ -79,8 +82,6 @@ UPDATE iamarks SET finalia= (GREATEST(test1+test2,test2+test3,test3+test1))/2;
 SELECT * FROM IAmarks;
 
 
-
-
 5.	Categorize students based on the following criterion:
 If FinalIA = 17 to 20 then CAT = ‘Outstanding’ If FinalIA = 12 to 16 then CAT = ‘Average’
 If FinalIA< 12 then CAT = ‘Weak’
@@ -99,6 +100,8 @@ WHERE i.usn=c.usn AND c.ssid=s.ssid AND s.sem=8 and s.sec IN ('A','B','C')
 
 
 
+
+	
 
 1. List the details of the candidates who are contesting from more than one constituency which are belongs to different states.
 select c.cand_id,cd.name,count(c.cons_id)from contest c,candidates cd where
@@ -214,6 +217,10 @@ SQL> select * from constituency;
        555 tnagar               karnataka                       4
 
 
+
+
+
+	   
 
 1.List the titles of all movies directed by ‘Hitchcock’.
 SELECT mov_title
