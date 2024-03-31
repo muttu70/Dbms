@@ -23,8 +23,8 @@ csstate	count(cons_id)
 kerala	3
 
 3. Create a stored procedure to insert the tuple into the voter table by checking the voter age. If
-voter’s age is at least 18 years old, then insert the tuple into the voter else display the “Not
-an eligible voter msg”.
+voterâ€™s age is at least 18 years old, then insert the tuple into the voter else display the â€œNot
+an eligible voter msgâ€.
 SQL> create   procedure agechecking ( id in number,age in number)
   2  as
   3  BEGIN
@@ -88,8 +88,8 @@ tnagar               karnataka                       4          2
 anagar               kerala                          1          1
 
 
-5. Create a TRIGGER to UPDATE the count of “Number_of_voters” of the respective
-constituency in “CONSTITUENCY” table, AFTER inserting a tuple into the “VOTERS”
+5. Create a TRIGGER to UPDATE the count of â€œNumber_of_votersâ€ of the respective
+constituency in â€œCONSTITUENCYâ€ table, AFTER inserting a tuple into the â€œVOTERSâ€
 table.
 SQL> create  trigger count
   2  after insert on voter
