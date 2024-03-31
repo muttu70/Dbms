@@ -22,7 +22,7 @@ SALESMAN_ID REFERENCES SALESMAN (SID) ON DELETE CASCADE);
 
 
 
-1. Count the customers with grades above Bangalore’saverage
+1. Count the customers with grades above Bangaloreâ€™saverage
 SELECT GRADE, COUNT (DISTINCT CID) FROM
 CUSTOMER
 GROUP BY GRADE
@@ -38,7 +38,8 @@ SELECT sid,name
                           GROUP BY salesman_id
                           HAVING COUNT(*) > 1);              
 
-3. List all salesmen and indicate those who have and don’t have customers in their cities (Use UNION operation.)
+3. List all salesmen and indicate those who have and donâ€™t have customers in their cities (Use UNION operation.)
+
 SELECT SALESMAN.SID, NAME, CNAME, COMMISSION FROM
 SALESMAN, CUSTOMER
 WHERE SALESMAN.CITY = CUSTOMER.CITY
